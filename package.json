@@ -1,0 +1,53 @@
+{
+  "name": "async-iterate",
+  "version": "0.0.1",
+  "description": "lightweight async iterators (map, each, reduce)",
+  "main": "index.js",
+  "scripts": {
+    "test_jshint": "node_modules/.bin/grunt jshint",
+    "test_unit": "node_modules/.bin/nodeunit tests/",
+    "test_unit_cov": "ASYNCITERATE_COV=1 node_modules/.bin/nodeunit --reporter=lcov tests/",
+    "jscov": "node_modules/.bin/jscoverage lib",
+    "test": "npm run test_jshint && npm run test_unit",
+    "coveralls": "npm run jscov && npm run test_unit_cov | node_modules/.bin/coveralls"
+  },
+  "dependencies": {
+    "lodash": "~2.4.1"
+  },
+  "devDependencies": {
+    "lodash": "~2.4.1",
+    "async": "~0.9.0",
+    "body-parser": "~1.10.0",
+    "colors": "~1.0.3",
+    "coveralls": "~2.11.2",
+    "express": "~4.10.6",
+    "grunt": "~0.4.5",
+    "grunt-cli": "~0.1.13",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-nodeunit": "~0.4.1",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-newer": "~0.8.0",
+    "grunto": "~1.2.1",
+    "jscoverage": "~0.5.9",
+    "nodeunit": "~0.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://aliaksandr-pasynkau@github.com/aliaksandr-pasynkau/async-iterate.git"
+  },
+  "keywords": [
+    "async",
+    "iterator",
+    "map",
+    "reduce",
+    "array",
+    "object",
+    "each"
+  ],
+  "author": "aliaksandr-pasynkau",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aliaksandr-pasynkau/async-iterate/issues"
+  },
+  "homepage": "https://github.com/aliaksandr-pasynkau/async-iterate"
+}
