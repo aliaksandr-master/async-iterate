@@ -8,6 +8,8 @@
 async-iterate
 =============
 
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/aliaksandr-pasynkau/async-iterate?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 lightweight iterators (reduce, map, each) of collections (array, plain object) with async callbacks
 
 ## iterate::each(object, iterator, done)
