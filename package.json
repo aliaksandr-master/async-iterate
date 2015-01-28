@@ -12,24 +12,20 @@
     "coveralls": "npm run jscov && npm run test_unit_cov | node_modules/.bin/coveralls"
   },
   "dependencies": {
-    "lodash": "~2.4.1"
+    "lodash": "~3.0.0"
   },
   "devDependencies": {
-    "lodash": "~2.4.1",
-    "async": "~0.9.0",
-    "body-parser": "~1.10.0",
-    "colors": "~1.0.3",
-    "coveralls": "~2.11.2",
-    "express": "~4.10.6",
-    "grunt": "~0.4.5",
-    "grunt-cli": "~0.1.13",
-    "grunt-contrib-jshint": "~0.10.0",
-    "grunt-contrib-nodeunit": "~0.4.1",
-    "grunt-contrib-watch": "~0.6.1",
-    "grunt-newer": "~0.8.0",
-    "grunto": "~1.2.1",
-    "jscoverage": "~0.5.9",
-    "nodeunit": "~0.9.0"
+    "async": "^0.9.0",
+    "coveralls": "^2.11.2",
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-contrib-nodeunit": "^0.4.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-newer": "^1.1.0",
+    "grunto": "^1.3.6",
+    "jscoverage": "^0.5.9",
+    "nodeunit": "^0.9.0"
   },
   "repository": {
     "type": "git",
