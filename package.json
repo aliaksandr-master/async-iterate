@@ -12,7 +12,7 @@
     "coveralls": "npm run jscov && npm run test_unit_cov | node_modules/.bin/coveralls"
   },
   "dependencies": {
-    "lodash": "~3.0.0"
+    "lodash": "~3.8.0"
   },
   "devDependencies": {
     "async": "^0.9.0",
