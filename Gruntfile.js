@@ -1,10 +1,16 @@
-"use strict";
+'use strict';
 
-module.exports = require('grunto')(function(grunt) {
+var grunto = require('grunto');
+
+module.exports = grunto(function (grunt) {
+
+	grunt.registerTask('test', [
+		'newer:eslint',
+		'nodeunit'
+	]);
 
 	grunt.registerTask('default', [
-		'newer:jshint:all',
-		'nodeunit',
+		'test',
 		'watch'
 	]);
 
@@ -12,16 +18,14 @@ module.exports = require('grunto')(function(grunt) {
 		nodeunit: {
 			all: [
 				'tests/*.js'
-			],
-			options: {
-			}
+			]
 		},
-		'jshint': {
-			options: grunt.file.readJSON('.jshintrc'),
+		eslint: {
 			all: [
-				'**/*.{js,json}',
-				'!node_modules/**/*.{js,json}',
-				'!lib-cov/**/*.{js,json}'
+				'**/*.js',
+				'!lib/**/*.js',
+				'!node_modules/**/*',
+				'!lib-cov/**/*'
 			]
 		},
 		watch: {
@@ -30,10 +34,8 @@ module.exports = require('grunto')(function(grunt) {
 				'tests/**/*'
 			],
 			tasks: [
-				'newer:jshint:all',
-				'nodeunit'
+				'test'
 			]
 		}
 	};
-
 });
