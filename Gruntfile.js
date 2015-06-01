@@ -23,7 +23,6 @@ module.exports = grunto(function (grunt) {
 		eslint: {
 			all: [
 				'**/*.js',
-				'!lib/**/*.js',
 				'!node_modules/**/*',
 				'!lib-cov/**/*'
 			]
