@@ -7,16 +7,16 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "lodash": "4.11.2"
   },
   "devDependencies": {
+    "lodash": "4.11.2",
     "async": "^2.0.0-rc.3",
     "grunt": "^1.0.1",
-    "grunto": "^3.0.3",
     "grunt-contrib-nodeunit": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-eslint": "^18.1.0",
     "grunt-newer": "^1.2.0",
+    "grunto": "^3.0.3",
     "nodeunit": "^0.9.1"
   },
   "repository": {
