@@ -1,13 +1,12 @@
 {
   "name": "async-iterate",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "lightweight async iterators (map, each, reduce)",
   "main": "index.js",
   "scripts": {
     "test": "grunt test"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "lodash": "4.11.2",
     "async": "^2.0.0-rc.3",
