@@ -1,6 +1,6 @@
 {
   "name": "async-iterate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "lightweight async iterators (map, each, reduce)",
   "main": "index.js",
   "scripts": {
