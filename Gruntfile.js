@@ -1,8 +1,10 @@
 'use strict';
 
 var grunto = require('grunto');
+var jitGrunt = require('jit-grunt');
 
 module.exports = grunto(function (grunt) {
+	jitGrunt(grunt);
 
 	grunt.registerTask('test', [
 		'newer:eslint',

@@ -8,7 +8,6 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "lodash": "4.11.2",
     "async": "^2.0.0-rc.3",
     "grunt": "^1.0.1",
     "grunt-contrib-nodeunit": "^1.0.0",
@@ -16,6 +15,8 @@
     "grunt-eslint": "^18.1.0",
     "grunt-newer": "^1.2.0",
     "grunto": "^3.0.3",
+    "jit-grunt": "^0.10.0",
+    "lodash": "4.11.2",
     "nodeunit": "^0.9.1"
   },
   "repository": {
